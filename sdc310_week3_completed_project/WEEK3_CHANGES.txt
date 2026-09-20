@@ -1,0 +1,8 @@
+Week 3 updates completed:
+- Added shared PDO database connection in models/Database.php.
+- Added Customer, Employee, ProductService, ComplaintType, Complaint, and TechnicianNote models.
+- Added controllers for each model.
+- Added CRUD methods using prepared statements.
+- Added database_test.php to verify PHP/MySQL connectivity and model reads.
+- Updated README.md with Week 3 database/MVC documentation.
+- Existing Week 2 views, CSS, configuration, and SQL file were retained.

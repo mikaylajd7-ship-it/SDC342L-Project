@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0 0 12px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    margin-bottom: 12px;
+    font: inherit;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
