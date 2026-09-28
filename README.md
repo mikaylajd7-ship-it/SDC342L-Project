@@ -1,33 +1,55 @@
-# SDC310 Week 2 Project
+# Customer Complaint Management System
 
-## Customer Complaint System
+## Project Overview
 
-This project is the Week 2 foundation for the Advanced Server-Side Scripting with PHP course project.
+This project is a PHP-based customer complaint management system developed using the MVC architecture. The application allows customers to submit and manage complaints, while technicians and administrators can manage complaint information based on their assigned roles.
 
-### Week 2 work
-- Created the MySQL database and related tables.
-- Created the initial PHP project directory structure.
-- Added initial registration, login, complaint, dashboard, and home pages.
-- Added the database connection configuration.
-- Added starter MVC folders for models, views, and controllers.
+The application uses PHP, MySQL, PDO, HTML, CSS, and session-based authentication and authorization.
 
-## Running locally
+## Week 2: Creating the Database and Application Framework
 
-1. Start Apache and MySQL in XAMPP.
-2. Import `database/sdc310_complaints.sql` into phpMyAdmin.
-3. Place the project folder inside `C:\xampp\htdocs`.
-4. Open:
-   `http://localhost/sdc310_week2_project/`
+- Created the MySQL database for the application.
+- Created tables for customers, employees, products/services, complaint types, complaints, and technician notes.
+- Established the initial MVC folder structure.
+- Created the initial application pages and forms.
+- Created the GitHub repository and project structure.
 
-## Database
-Database name: `sdc310_complaints`
+## Week 3: Database Support and Object-Model Representation
 
-The database contains:
-- customers
-- employees
-- products_services
-- complaint_types
-- complaints
-- technician_notes
+- Added PHP database support using PDO.
+- Created PHP model classes for the database tables.
+- Created controller classes for database operations.
+- Implemented CRUD operations using prepared statements.
+- Added database connection and query testing.
+- Connected the PHP application to the MySQL database.
 
-Authentication, authorization, complete CRUD operations, file uploads, and final application functionality will be developed in later weeks.
+## Week 4: Site Security
+
+- Added session-based user authentication.
+- Added customer and employee login support.
+- Added secure password verification using PHP password hashing functions.
+- Added logout functionality.
+- Added protected pages that require authentication.
+- Added authorization based on employee roles.
+- Added separate access handling for customers, technicians, and administrators.
+- Added session regeneration after successful login.
+- Added testing for invalid login attempts, logout, protected pages, and unauthorized access.
+
+### Week 4 Security Files
+
+The following files were added:
+
+```text
+config/
+└── auth.php
+
+models/
+└── User.php
+
+controllers/
+└── AuthController.php
+
+views/
+├── login.php
+├── dashboard.php
+└── logout.php
