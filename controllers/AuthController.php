@@ -43,6 +43,10 @@ class AuthController
     public function logout()
     {
         logoutUser();
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $controller = new AuthController();
+    $controller->login();
+}
 
         header("Location: ../views/login.php");
         exit;
